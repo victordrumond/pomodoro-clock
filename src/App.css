@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: linear-gradient(0deg, #0B3223, #448859) fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#tomato {
+  position: absolute;
+  shape-outside: url(tomato.png);
+  top: 170px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  margin-top: -300px;
+  margin-left: -300px;
+  z-index: -100;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#main-container {
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  margin-top: -300px;
+  margin-left: -300px;
+  padding: 4rem;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+#title-container {
+  margin-bottom: 2rem;
+}
+
+#title-container h1 {
+  font-size: 40px;
+}
+
+#ajusts-container {
+  margin-bottom: 2rem;
+  gap: 60px;
+}
+
+#display-container {
+  gap: 10px;
+}
+
+#display-container h2 {
+  margin: auto;
+}
+
+#display-container h1 {
+  margin: auto;
+  font-size: 40px;
+}
+
+#timer-controls {
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.button {
+  border: 1px solid grey;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+#footer-container {
   color: white;
+  margin-top: 4rem;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px) {
+  #tomato {
+    top: 280px;
+    width: 360px;
+    height: 360px;
+    margin-top: -180px;
+    margin-left: -180px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  #main-container {
+    top: 220px;
+    width: 360px;
+    height: 360px;
+    margin-top: -180px;
+    margin-left: -180px;
+    padding: 0rem;
+  }
+
+  #title-container {
+    margin-top: 1.5rem;
+    margin-bottom: 9.5rem;
+  }
+  
+  #title-container h1 {
+    font-size: 35px;
+    color: white;
+  }
+  
+  #ajusts-container {
+    margin: 2rem 7rem;
+    gap: 20px;
+  }
+
+  #display-container {
+    margin-top: -15px;
+    gap: 2px;
+  }
+  
+  #display-container h2 {
+    font-size: 24px;
+  }
+  
+  #display-container h1 {
+    font-size: 30px;
+  }
+  
+  #timer-controls {
+    margin-top: 5px;
+    gap: 5px;
+  }
+
+  .button {
+    width: 35px;
+    height: 35px;
+  }
+  
+  #footer-container {
+    margin: 6rem 2.5rem 2rem;
   }
 }

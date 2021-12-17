@@ -1,0 +1,19 @@
+.time-sets {
+    gap: 10px;
+}
+  
+.time-sets h3 {
+    width: 85px;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .ajust-title h3 {
+        font-size: 22px;
+    }
+    
+    .time-sets h3 {
+        font-size: 24px;
+        width: 25px;
+    }
+}
