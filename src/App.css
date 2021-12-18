@@ -11,7 +11,7 @@ body {
 
 #tomato {
   position: absolute;
-  shape-outside: url(tomato.png);
+  shape-outside: url(./media/tomato.png);
   top: 170px;
   left: 50%;
   width: 600px;

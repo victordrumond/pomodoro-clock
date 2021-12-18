@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import Length from './Length.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPause, faPlay, faSyncAlt } from '@fortawesome/free-solid-svg-icons'
-import tomato from './tomato.png';
-import audio from './sound.mp3';
+import tomato from './media/tomato.png';
+import audio from './media/beep.mp3';
 
 function App() {
 
@@ -142,7 +142,7 @@ function App() {
         <p>A freeCodeCamp project by Victor</p>
       </div>
 
-      <img src={tomato} id="tomato" className="img-fluid"></img>
+      <img src={tomato} id="tomato" className="img-fluid" alt="background-tomato"></img>
 
     </div>
   );
